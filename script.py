@@ -58,7 +58,7 @@ while True:
     mask_big = cv2.resize(mask, (1280, 720))
 
     overlay = frame.copy()
-    overlay[mask_big == 255] = [0,0,255]
+    overlay[mask_big == 255] = [50,150,50]
 
     result = cv2.addWeighted(frame, 0.7, overlay, 0.3, 0)
 
